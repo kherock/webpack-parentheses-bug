@@ -1,0 +1,22 @@
+{
+  "name": "webpack-parentheses-bug",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build-babel": "babel src/app.js -o out/babel.js",
+    "build-esbuild": "esbuild src/app.js --outfile=out/esbuild.js",
+    "build-swc": "swc --no-swcrc --source-maps false src/app.js -o out/swc.js",
+    "build-webpack": "webpack"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@swc/cli": "^0.1.51",
+    "@swc/core": "^1.2.106",
+    "babel-loader": "^8.2.3",
+    "esbuild": "^0.13.12",
+    "esbuild-loader": "^2.15.1",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
